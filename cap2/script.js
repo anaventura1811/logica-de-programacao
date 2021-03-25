@@ -7,5 +7,5 @@ btnMostrar.addEventListener('click', (e) => {
     e.preventDefault();
     newParag.classList.add('resposta');
     mainContent.appendChild(newParag);
-    newParag.innerHTML = `Olá, ${nome.value}! Como você está?`;
+    newParag.textContent = `Olá, ${nome.value}! Como você está?`;
 });
