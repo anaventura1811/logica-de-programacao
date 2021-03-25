@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duração de uma viagem em dias e horas</title>
+</head>
+<body>
+    <script>
+        const travel = () => {
+            let days = Number(prompt(`Digite aqui o número de dias de sua viagem: `));
+            let hours = Number(prompt(`Digite aqui o número de horas de sua viagem: `));
+            let daysToHours = days * 24;
+            let travelDuration = daysToHours + hours;
+            alert(`Sua viagem terá a duração de ${travelDuration} horas`);
+        }
+        travel();
+
+    </script>
+</body>
+</html>
