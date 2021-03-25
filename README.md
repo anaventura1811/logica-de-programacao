@@ -23,3 +23,17 @@ Este repositório foi criado com o objetivo de estudar mais sobre lógica de pro
 - [x] *Considerações finais do capítulo*
 
 ## Capítulo 2 - Integração com HTML
+- [x] *Estrutura básica de um documento HTML*
+- [x] *Cabeçalhos, parágrafos e campos de formulários*
+- [x] *Introdução a eventos e funções*
+- [x] *Método getElementById*
+- [x] *Propriedades textContent, innerHTML e value*
+- [x] *Formas de adicionar JavaScript ao HTML*
+- [x] *Uso de rotinas de tratamento de eventos HTML*
+- [x] *Uso de rotinas de tratamento de eventos DOM*
+- [x] *Uso dos listeners (ouvintes) de eventos*
+- [x] *Nomenclatura e escopo das variáveis*
+- [ ] *Operadores aritméticos e funções matemáticas*
+- [ ] *Exemplos de programas JavaScript integrados com HTML*
+- [ ] *Exercícios*
+- [ ] *Considerações finais do capítulo*
