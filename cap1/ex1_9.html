@@ -10,15 +10,29 @@
     <!--Objetivo: elaborar um algoritmo que leia o valor de um jantar, calcule e informe o valor da taxa de serviço do garçom (10%)
     e o valor total a ser pago pelo cliente-->
     <script>
-        // Valor do jantar: R$ 80.00
-        // Valor da taxa de serviço do garçom: 10%
-        // Total a pagar: R$ 88.00
-        
+
+        // Link para a função round, usada para arredondar os valores: https://metring.com.br/arredondar-numero-em-javascript
+        const round = (numToBeRounded, numOfDecimals) => {
+          if (!("" + numToBeRounded).includes("e")) {
+		        return +(Math.round(numToBeRounded + "e+" + numOfDecimals)  + "e-" + numOfDecimals);
+	        } else {
+		         let arr = ("" + numToBeRounded).split("e");
+		         let sig = ""
+		       if (+arr[1] + numOfDecimals > 0) {
+			        sig = "+";
+		        }
+
+		      return +(Math.round(+arr[0] + "e" + sig + (+arr[1] + numOfDecimals)) + "e-" + numOfDecimals);
+        }
+      }
+      
+      const calculateDinnerCheck = () => {
         let contaDoJantar = Number(prompt(`Digite aqui o valor do jantar: R$ `));
         let taxaDeServico = contaDoJantar * 0.10;
         let total = contaDoJantar + taxaDeServico;
-        alert(`O valor total a pagar é R$ ${total}`);
-
+        alert(`A taxa de serviço é ${round(taxaDeServico, 2)} e valor total a pagar é R$ ${round(total, 2)}`);
+      }
+      calculateDinnerCheck();
     </script>
 </body>
 </html>
