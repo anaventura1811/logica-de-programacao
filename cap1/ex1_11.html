@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Algoritmos </title>
+</head>
+<body>
+    <!---->
+    <script>
+        /* Primeiro algoritmo - Elaborar um programa que leia um número e 
+        que calcule e informe os seus vizinhos. Ou seja, o número anterior 
+        e o posterior a ele */
+
+        const neighbourNum = () => {
+            let inputNumber = Number(prompt(`Digite um número e conheça seus vizinhos: `));
+            let neighbourOne = inputNumber -= 1;
+            let neighbourTwo = inputNumber += 2;
+            alert(`Os números vizinhos são ${neighbourOne} e ${neighbourTwo}`);
+        }
+        neighbourNum();
+
+         /* Segundo algoritmo - Elaborar um programa para uma pizzaria que leia o valor total de uma conta
+         e quantos clientes vão pagá-la. Calcular e informar o valor a ser pago por cliente.*/
+
+         // Utilizando novamente a função de arredondamento - link: https://metring.com.br/arredondar-numero-em-javascript
+         const round = (numToBeRounded, numOfDecimals) => {
+          if (!("" + numToBeRounded).includes("e")) {
+		        return +(Math.round(numToBeRounded + "e+" + numOfDecimals)  + "e-" + numOfDecimals);
+	        } else {
+		         let arr = ("" + numToBeRounded).split("e");
+		         let sig = ""
+		       if (+arr[1] + numOfDecimals > 0) {
+			        sig = "+";
+		        }
+
+		      return +(Math.round(+arr[0] + "e" + sig + (+arr[1] + numOfDecimals)) + "e-" + numOfDecimals);
+        }
+      }
+
+         const contaDapizza = () => {
+             let conta = Number(prompt(`Digite aqui o valor total da conta: `));
+             let pagantes = Number(prompt(`Digite aqui quantas pessoas pagarão a conta: `));
+             let totalPorPagante = conta / pagantes;
+             alert(`O valor a ser pago por cada cliente é R$ ${round(totalPorPagante, 2)}`);
+         }
+
+         contaDapizza();
+
+         /* Terceiro algoritmo - Elaborar um programa para uma que leia o preço de um produto e informe 
+         as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto
+         e o valor em 3x */
+
+         const productAndPaymentForms = () => {  
+             let productPrice = Number(prompt(`Insira o valor do produto: `));
+             let paymentFormOne = productPrice * 0.9;
+             let paymentFormInstallments = productPrice / 3;
+             alert(`Preço à vista: R$ ${round(paymentFormOne, 2)} e Preço parcelado: 3 x de R$ ${round(paymentFormInstallments, 2)}`);
+         }
+         productAndPaymentForms();
+
+         /* Quarto algoritmo - Elaborar um programa que leia 2 notas de um aluno em uma disciplina e calcule 
+         e informe a média das notas.*/
+
+         const mediaNotas = () => {
+             let gradeOne = Number(prompt(`Insira a primeira nota: `));
+             let gradeTwo = Number(prompt(`Insira a segunda nota: `));
+             let media = (gradeOne + gradeTwo) / 2;
+             alert(`A média das notas é ${media}`);
+         }
+         mediaNotas();
+
+
+    </script>
+</body>
+</html>
