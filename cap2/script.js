@@ -9,3 +9,4 @@ btnMostrar.addEventListener('click', (e) => {
     mainContent.appendChild(newParag);
     newParag.textContent = `Olá, ${nome.value}! Como você está?`;
 });
+
