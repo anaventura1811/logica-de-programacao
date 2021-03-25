@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do valor de um jantar</title>
+</head>
+<body>
+    <!--Objetivo: elaborar um algoritmo que leia o valor de um jantar, calcule e informe o valor da taxa de serviço do garçom (10%)
+    e o valor total a ser pago pelo cliente-->
+    <script>
+        // Valor do jantar: R$ 80.00
+        // Valor da taxa de serviço do garçom: 10%
+        // Total a pagar: R$ 88.00
+        
+        let contaDoJantar = Number(prompt(`Digite aqui o valor do jantar: R$ `));
+        let taxaDeServico = contaDoJantar * 0.10;
+        let total = contaDoJantar + taxaDeServico;
+        alert(`O valor total a pagar é R$ ${total}`);
+
+    </script>
+</body>
+</html>
