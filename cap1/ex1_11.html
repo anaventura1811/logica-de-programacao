@@ -59,6 +59,19 @@
              alert(`Preço à vista: R$ ${round(paymentFormOne, 2)} e Preço parcelado: 3 x de R$ ${round(paymentFormInstallments, 2)}`);
          }
          productAndPaymentForms();
+
+         /* Quarto algoritmo - Elaborar um programa que leia 2 notas de um aluno em uma disciplina e calcule 
+         e informe a média das notas.*/
+
+         const mediaNotas = () => {
+             let gradeOne = Number(prompt(`Insira a primeira nota: `));
+             let gradeTwo = Number(prompt(`Insira a segunda nota: `));
+             let media = (gradeOne + gradeTwo) / 2;
+             alert(`A média das notas é ${media}`);
+         }
+         mediaNotas();
+
+
     </script>
 </body>
 </html>
