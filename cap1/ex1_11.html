@@ -47,6 +47,18 @@
          }
 
          contaDapizza();
+
+         /* Terceiro algoritmo - Elaborar um programa para uma que leia o preço de um produto e informe 
+         as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto
+         e o valor em 3x */
+
+         const productAndPaymentForms = () => {  
+             let productPrice = Number(prompt(`Insira o valor do produto: `));
+             let paymentFormOne = productPrice * 0.9;
+             let paymentFormInstallments = productPrice / 3;
+             alert(`Preço à vista: R$ ${round(paymentFormOne, 2)} e Preço parcelado: 3 x de R$ ${round(paymentFormInstallments, 2)}`);
+         }
+         productAndPaymentForms();
     </script>
 </body>
 </html>
