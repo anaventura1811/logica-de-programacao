@@ -37,3 +37,13 @@ Este repositório foi criado com o objetivo de estudar mais sobre lógica de pro
 - [x] *Exemplos de programas JavaScript integrados com HTML*
 - [ ] *Exercícios*
 - [ ] *Considerações finais do capítulo*
+
+## Capítulo 3 - Condições
+- [ ] *If...else*
+- [ ] *Operadores relacionais*
+- [ ] *Operadores lógicos*
+- [ ] *Switch...case*
+- [ ] *Operador ternário*
+- [ ] *Exemplos*
+- [ ] *Exercícios*
+- [ ] *Considerações finais do capítulo*
