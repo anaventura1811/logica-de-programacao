@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Capítulo 2</title>
+    <link rel="stylesheet" href="style_ex2_2.css">
+</head>
+<body>
+    <main>
+      <h1>Meus filmes</h1>
+        <form action="" method="GET">
+
+          <div class="container-one">
+
+            <p>Instruções: 
+              <ol id="instructions">
+                <li>Digite o filme e a duração minutos</li>
+                <li>Clique no botão "Converter em horas e minutos"</li>
+                <li>Após o passo 2, clique no botão "adicionar à lista" para criar sua lista de filmes</li>
+              </ol>
+            </p>
+
+            <label for="movie">Título do filme</label>
+            <input type="text" name="movie" id="movie" placeholder="Insira o título do filme">
+
+            <label for="duration">Duração</label>
+            <input type="text" name="duration" id="duration" placeholder="Insira duração em minutos">
+
+          </div>
+
+         <div class="container">
+           <div class="subcontainer">
+              <button type="submit" id="convert">Converter em horas e minutos</button>
+              <button type="submit" id="add-to-list">Adicionar à lista</button>
+           </div>
+           <div class="subcontainer">
+              <button type="submit" id="save">Salvar lista</button>
+              <button type="submit" id="clear">Limpar lista</button>
+              <button type="submit" id="remover-selecionado">Remover</button>
+           </div>
+           
+         </div>
+        </form>
+        <p id="movie-title"></p>
+        <p id="horas-min"></p>
+
+        <section>
+          <ol id="movies-list">
+
+          </ol>
+         
+        </section>
+       
+    </main>
+    <script src="scriptex2.js"></script>
+</body>
+</html>
