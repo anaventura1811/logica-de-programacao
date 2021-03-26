@@ -33,7 +33,7 @@ Este repositório foi criado com o objetivo de estudar mais sobre lógica de pro
 - [x] *Uso de rotinas de tratamento de eventos DOM*
 - [x] *Uso dos listeners (ouvintes) de eventos*
 - [x] *Nomenclatura e escopo das variáveis*
-- [ ] *Operadores aritméticos e funções matemáticas*
+- [x] *Operadores aritméticos e funções matemáticas*
 - [ ] *Exemplos de programas JavaScript integrados com HTML*
 - [ ] *Exercícios*
 - [ ] *Considerações finais do capítulo*
